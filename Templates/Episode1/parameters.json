@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "gblonappt01"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "dapazd"
+        },
+        "virtualNetworkName": {
+            "value": "arm-meetup-rg-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "gblonappt01191"
+        },
+        "networkSecurityGroupName": {
+            "value": "gblonappt01-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "zone": {
+            "value": "1"
+        },
+        "addressPrefix": {
+            "value": "172.16.4.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "172.16.4.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "gblonappt01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
