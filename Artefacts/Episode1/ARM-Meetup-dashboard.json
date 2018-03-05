@@ -1,0 +1,83 @@
+{
+    "properties": {
+        "lenses": {
+            "0": {
+                "order": 0,
+                "parts": {
+                    "0": {
+                        "position": {
+                            "x": 0,
+                            "y": 0,
+                            "colSpan": 5,
+                            "rowSpan": 2
+                        },
+                        "metadata": {
+                            "inputs": [],
+                            "type": "Extension[azure]/HubsExtension/PartType/MarkdownPart",
+                            "settings": {
+                                "content": {
+                                    "settings": {
+                                        "content": "Select a __virtual machine__ you would like to provision from available tiles on the right by clicking at the tile.\n\n\n",
+                                        "title": "Virtual Machine Provisioning Self-service",
+                                        "subtitle": "Instructions"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "1": {
+                        "position": {
+                            "x": 5,
+                            "y": 0,
+                            "colSpan": 2,
+                            "rowSpan": 2
+                        },
+                        "metadata": {
+                            "inputs": [{
+                                "name": "id",
+                                "value": "/providers/microsoft.gallery/myareas/066ff619-4eff-4660-ae3d-68bfb1d2f91c/galleryitems/windows_2016_vm"
+                            }],
+                            "type": "Extension/Microsoft_Azure_Marketplace/PartType/GalleryRpItemPart",
+                            "asset": {
+                                "idInputName": "id",
+                                "type": "GalleryRpItem"
+                            }
+                        }
+                    },
+                    "2": {
+                        "position": {
+                            "x": 0,
+                            "y": 3,
+                            "colSpan": 4,
+                            "rowSpan": 2
+                        },
+                        "metadata": {
+                            "inputs": [{
+                                "name": "resourceType",
+                                "value": "Microsoft.Gallery/myareas/galleryitems",
+                                "isOptional": true
+                            }, {
+                                "name": "filter",
+                                "isOptional": true
+                            }, {
+                                "name": "scope",
+                                "isOptional": true
+                            }, {
+                                "name": "kind",
+                                "isOptional": true
+                            }],
+                            "type": "Extension/HubsExtension/PartType/BrowseBaseResourcesPinnedPart"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "id": "private/e45c94c1-5861-47e9-ac6e-eaf5b3341735",
+    "name": "ARM Meetup",
+    "type": "Microsoft.Portal/dashboards",
+    "location": "INSERT LOCATION",
+    "tags": {
+        "hidden-title": "ARM Meetup"
+    }
+}
