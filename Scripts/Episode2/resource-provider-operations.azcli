@@ -1,0 +1,10 @@
+
+# ee all resource providers in Azure, and the registration status for your subscription
+az provider list --query "[].{Provider:namespace, Status:registrationState}" --out table
+
+# Register a RP
+az provider register --namespace Microsoft.Batch
+
+# Show the status of RP registration
+az provider show --namespace Microsoft.Batch
+
