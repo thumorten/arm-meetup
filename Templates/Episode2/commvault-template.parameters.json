@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "commvault01"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "dapazd"
+        },
+        "virtualNetworkName": {
+            "value": "commvault-dev-rg-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "commvault01821"
+        },
+        "networkSecurityGroupName": {
+            "value": "commvault01-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "addressPrefix": {
+            "value": "172.16.4.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "172.16.4.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "commvault01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}

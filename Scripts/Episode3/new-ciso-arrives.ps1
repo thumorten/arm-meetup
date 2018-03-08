@@ -30,3 +30,4 @@ New-AzureRmPolicyAssignment -Name "RestrictLocationPolicyAssignment" -PolicyDefi
 
 
 
+
