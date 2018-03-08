@@ -8,3 +8,12 @@ az provider register --namespace Microsoft.Batch
 # Show the status of RP registration
 az provider show --namespace Microsoft.Batch
 
+# see the resource types for a resource provider
+az provider show --namespace Microsoft.Batch --query "resourceTypes[*].resourceType" --out table
+
+# get the available API versions for a resource type
+az provider show --namespace Microsoft.Batch --query "resourceTypes[?resourceType=='batchAccounts'].apiVersions | [0]" --out table
+
+# get the supported locations for a resource type
+az provider show --namespace Microsoft.Batch --query "resourceTypes[?resourceType=='batchAccounts'].locations | [0]" --out table
+

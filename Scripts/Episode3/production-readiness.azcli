@@ -1,0 +1,4 @@
+
+# Find resource using tags
+az resource list --tag costCenter=Finance
+

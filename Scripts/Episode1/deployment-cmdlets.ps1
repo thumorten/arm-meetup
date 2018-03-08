@@ -1,5 +1,20 @@
 ## Code snippets for working with ARM deployments
 
+# Lists available RPs with registration status
+Get-AzureRmResourceProvider -ListAvailable | Select-Object ProviderNamespace, RegistrationState
+# Register a RP
+Register-AzureRmResourceProvider -ProviderNamespace Microsoft.Batch
+Get-AzureRmResourceProvider -ProviderNamespace Microsoft.Batch
+
+# Get resource types for a resource provider
+(Get-AzureRmResourceProvider -ProviderNamespace Microsoft.Batch).ResourceTypes.ResourceTypeName
+
+# Get the available API versions for a resource type
+((Get-AzureRmResourceProvider -ProviderNamespace Microsoft.Batch).ResourceTypes | Where-Object ResourceTypeName -eq batchAccounts).ApiVersions
+
+# Get supported locations for a resource type
+((Get-AzureRmResourceProvider -ProviderNamespace Microsoft.Batch).ResourceTypes | Where-Object ResourceTypeName -eq batchAccounts).Locations
+
 # Get all deployments for a resource group
 Get-AzureRmResourceGroupDeployment -ResourceGroupName "k8sjenspin-dev-rg"
 # Output structure (objects): 
